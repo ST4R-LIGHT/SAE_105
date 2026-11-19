@@ -1,124 +1,131 @@
 <!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- permet d'afficher les accents -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Explique au navigateur comment afficher la page sur téléphone -->
+    <meta
+      name="description"
+      content="Viridis : visite d'une cité imaginaire de 2087 où le développement durable passe avant tout."
+    />
+    <!-- description = la phrase qui s'affiche sous le titre dans Google (unique pour chaque page) -->
+    <meta name="author" content="Jennifer LAFITTE" />
+    <!-- author = le nom de la personne qui a fait le site -->
+    <title>Accueil - Viridis</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <!-- Le fichier JavaScript est chargé ici, "defer" = il attend que la page soit lue avant de se lancer -->
+    <script src="js/main.js" defer></script>
+  </head>
+  <!-- Partie Body, avec header, main et footer -->
 
-<head>
-  <meta charset="UTF-8" />
-  <!-- permet d'afficher les accents -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Explique au navigateur comment afficher la page sur téléphone -->
-  <meta name="description"
-    content="Viridis : visite d'une cité imaginaire de 2087 où le développement durable passe avant tout." />
-  <!-- description = la phrase qui s'affiche sous le titre dans Google (unique pour chaque page) -->
-  <meta name="author" content="Jennifer LAFITTE" />
-  <!-- author = le nom de la personne qui a fait le site -->
-  <title>Accueil - Viridis</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="images/favicon.ico" />
-  <!-- Le fichier JavaScript est chargé ici, "defer" = il attend que la page soit lue avant de se lancer -->
-  <script src="js/main.js" defer></script>
-</head>
-<!-- Partie Body, avec header, main et footer -->
+  <body>
+    <!-- En-tête : le titre du site et le menu -->
+    <header>
+      <!-- Le logo (image) est placé dans le titre -->
+      <h1 id="haut">
+        <img
+          src="images/logo.svg"
+          alt="Logo Viridis : une feuille verte"
+          width="40"
+        />
+        Viridis
+      </h1>
+      <!-- Menu : une liste de liens vers les pages du site -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="ville.html">La cité</a></li>
+          <li><a href="energie.html">Énergie</a></li>
+          <li><a href="transports.html">Transports</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <!-- En-tête : le titre du site et le menu -->
-  <header>
-    <!-- Le logo (image) est placé dans le titre -->
-    <h1 id="haut">
-      <img src="images/logo.svg" alt="Logo Viridis : une feuille verte" width="40" />
-      Viridis
-    </h1>
-    <!-- Menu : une liste de liens vers les pages du site -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="ville.html">La cité</a></li>
-        <li><a href="energie.html">Énergie</a></li>
-        <li><a href="transports.html">Transports</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Contenu principal de la page -->
-  <main>
-    <!-- Présentation du site -->
-    <section id="presentation">
-      <h2>Viridis, la cité verte de 2087</h2>
-      <p>
-        En 2087, une ville a été construite autour d'une seule règle : le
-        <strong>développement durable</strong> passe avant tout. Visitez-la
-        grâce à ce site imaginaire.
-      </p>
-      <!-- Ces 2 paragraphes sont vides : c'est le JavaScript (js/main.js) qui écrit dedans -->
-      <p id="salutation"></p>
-      <p id="astuce"></p>
-      <!-- Image cliquable : le clic mène à la source de la photo -->
-      <figure>
-        <!-- figure = boîte qui contient l’image -->
-        <a href="https://commons.wikimedia.org/wiki/File:Bosco_Verticale_from_UniCredit_Tower,_Milan_(17591709258).jpg">
-          <img
-            src="https://commons.wikimedia.org/wiki/Special:FilePath/Bosco_Verticale_from_UniCredit_Tower,_Milan_(17591709258).jpg?width=600"
-            alt="Deux tours dont les balcons sont couverts d'arbres" width="400" />
-        </a>
-        <figcaption>
-          <!-- figcaption = la légende d’une image. Le texte s’affichera juste en dessous de la photo.
+    <!-- Contenu principal de la page -->
+    <main>
+      <!-- Présentation du site -->
+      <section id="presentation">
+        <h2>Viridis, la cité verte de 2087</h2>
+        <p>
+          En 2087, une ville a été construite autour d'une seule règle : le
+          <strong>développement durable</strong> passe avant tout. Visitez-la
+          grâce à ce site imaginaire.
+        </p>
+        <!-- Ces 2 paragraphes sont vides : c'est le JavaScript (js/main.js) qui écrit dedans -->
+        <p id="salutation"></p>
+        <p id="astuce"></p>
+        <!-- Image cliquable : le clic mène à la source de la photo -->
+        <figure>
+          <!-- figure = boîte qui contient l’image -->
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Bosco_Verticale_from_UniCredit_Tower,_Milan_(17591709258).jpg"
+          >
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Bosco_Verticale_from_UniCredit_Tower,_Milan_(17591709258).jpg?width=600"
+              alt="Deux tours dont les balcons sont couverts d'arbres"
+              width="400"
+            />
+          </a>
+          <figcaption>
+            <!-- figcaption = la légende d’une image. Le texte s’affichera juste en dessous de la photo.
            Il fonctionne avec <figure>. <figure> est la boîte qui contient l’image, et figcaption est la phrase d’explication dans cette boîte. 
             Voir TD01 avec Domergue "Le Puy En Velay" si besoin-->
-          Les immeubles de Viridis sont couverts de plantes (source :
-          Wikimedia Commons)
-        </figcaption>
-      </figure>
-    </section>
+            Les immeubles de Viridis sont couverts de plantes (source :
+            Wikimedia Commons)
+          </figcaption>
+        </figure>
+      </section>
 
-    <!-- Liens vers les autres pages -->
-    <section id="visite">
-      <h2>Visiter Viridis</h2>
-      <ul>
-        <li><a href="ville.html">La cité</a></li>
-        <li><a href="energie.html">Énergie</a></li>
-        <li><a href="transports.html">Transports</a></li>
-      </ul>
-    </section>
+      <!-- Liens vers les autres pages -->
+      <section id="visite">
+        <h2>Visiter Viridis</h2>
+        <ul>
+          <li><a href="ville.html">La cité</a></li>
+          <li><a href="energie.html">Énergie</a></li>
+          <li><a href="transports.html">Transports</a></li>
+        </ul>
+      </section>
 
-    <!-- Formulaire : le visiteur donne son avis -->
-    <section id="avis">
-      <h2>Donnez votre avis</h2>
-      <form action="index.html" method="get">
-        <!-- form = formulaire, la boîte qui contient tous les champs qui doivent être remplit (email, nom prénom, ...). -->
-        <p>
-          <label for="nom">Nom :</label>
-          <!-- rappel de label vu que j'oublie tout le temps; 
+      <!-- Formulaire : le visiteur donne son avis -->
+      <section id="avis">
+        <h2>Donnez votre avis</h2>
+        <form action="index.html" method="get">
+          <!-- form = formulaire, la boîte qui contient tous les champs qui doivent être remplit (email, nom prénom, ...). -->
+          <p>
+            <label for="nom">Nom :</label>
+            <!-- rappel de label vu que j'oublie tout le temps; 
      label : c’est le texte devant un champ  "Nom" avec for="nom", 
         penses aux étiquettes minecraft pour renommer les chats, c'est le meme système
            il est relié au champ qui a id="nom" 
 donc faut que le label=nom et id=nom les 2 nom doivent être pareil sinon ça veut pas marcher -->
-          <input type="text" id="nom" name="nom" />
-          <!-- Input = le champ qu'on remplit pour le formulaire,
+            <input type="text" id="nom" name="nom" />
+            <!-- Input = le champ qu'on remplit pour le formulaire,
                   type va changer le champ qu'on remplit -->
-        </p>
-        <p>
-          <label for="mail">Email :</label>
-          <input type="email" id="mail" name="mail" />
-        </p>
-        <p>
-          <label for="message">Message :</label><br />
-          <textarea id="message" name="message" rows="4" cols="40"></textarea>
-        </p>
-        <button type="submit">Envoyer</button>
-      </form>
-    </section>
-  </main>
+          </p>
+          <p>
+            <label for="mail">Email :</label>
+            <input type="email" id="mail" name="mail" />
+          </p>
+          <p>
+            <label for="message">Message :</label><br />
+            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+          </p>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
 
-  <!-- Pied de page : le texte du site et des liens cliquables type breadcrumbs mais en bas -->
-  <footer>
-    <p>Viridis - projet étudiant (SAE 105). Site imaginaire.</p>
-    <!-- Liens : les 2 pages du bas, et "Haut de page" qui remonte au titre grâce à id="haut" (voir le h1) -->
-    <p>
-      <a href="mentions-legales.html">Mentions légales</a> -
-      <a href="accessibilite.html">Accessibilité</a> -
-      <a href="#haut">Haut de page</a>
-    </p>
-  </footer>
-
-</body>
-
+    <!-- Pied de page : le texte du site et des liens cliquables type breadcrumbs mais en bas -->
+    <footer>
+      <p>Viridis - projet étudiant (SAE 105). Site imaginaire.</p>
+      <!-- Liens : les 2 pages du bas, et "Haut de page" qui remonte au titre grâce à id="haut" (voir le h1) -->
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a> -
+        <a href="accessibilite.html">Accessibilité</a> -
+        <a href="#haut">Haut de page</a>
+      </p>
+    </footer>
+  </body>
 </html>

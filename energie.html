@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- permet d'afficher les accents -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Explique au navigateur comment afficher la page sur téléphone -->
+    <meta
+      name="description"
+      content="L'énergie à Viridis : soleil, vent et eau de pluie, aucune énergie qui pollue."
+    />
+    <!-- description = la phrase qui s'affiche sous le titre dans Google (elle doit être différente sur chaque page) -->
+    <meta name="author" content="Jennifer LAFITTE" />
+    <title>Énergie - Viridis</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <!-- Partie Body, avec header, main et footer -->
+
+  <body>
+    <!-- En-tête : le même que sur la page d'accueil -->
+    <header>
+      <!-- Le logo (image) est placé dans le titre -->
+      <h1 id="haut">
+        <img
+          src="images/logo.svg"
+          alt="Logo Viridis : une feuille verte"
+          width="40"
+        />
+        Viridis
+      </h1>
+      <!-- Menu : une liste de liens vers les pages du site -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="ville.html">La cité</a></li>
+          <li><a href="energie.html">Énergie</a></li>
+          <li><a href="transports.html">Transports</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenu principal de la page -->
+    <main>
+      <h2>L'énergie</h2>
+      <p>
+        À Viridis, toute l'électricité vient du soleil, du vent et de l'eau.
+        Rien ne vient du pétrole ni du charbon.
+      </p>
+
+      <!-- Partie 1 : le parc d'énergie (une photo) -->
+      <section id="parc-energie">
+        <h3>Un parc d'énergie</h3>
+        <p>
+          Des éoliennes et des panneaux solaires sont installés autour de la
+          ville.
+        </p>
+        <!-- Image cliquable : le clic mène à la source de la photo -->
+        <figure>
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Energiepark_Morbach.jpg"
+          >
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Energiepark_Morbach.jpg?width=600"
+              alt="Vue aérienne d'éoliennes et de panneaux solaires dans la campagne"
+              width="400"
+            />
+          </a>
+          <figcaption>
+            Un parc d'énergie en Allemagne, comme ceux de Viridis (source :
+            Wikimedia Commons)
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Partie 2 : l'eau de pluie (un dessin = mon 4e type de contenu, après texte, photo et formulaire) -->
+      <section id="eau-pluie">
+        <h3>L'eau de pluie</h3>
+        <p>
+          L'eau de pluie est récupérée sur les toits et gardée dans une cuve.
+          Elle sert à arroser les plantes.
+        </p>
+        <!-- Dessin (schéma) cliquable : le clic mène à la page d'origine du dessin -->
+        <figure>
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Rainwater_harvesting_system.JPG"
+          >
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Rainwater_harvesting_system.JPG?width=400"
+              alt="Dessin d'un système de récupération de l'eau de pluie : l'eau du toit descend dans une cuve"
+              width="400"
+            />
+          </a>
+          <figcaption>
+            Schéma d'un système de récupération de l'eau de pluie (source :
+            Wikimedia Commons)
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <!-- Pied de page : le même que sur la page d'accueil -->
+    <footer>
+      <p>Viridis - projet étudiant (SAE 105). Site imaginaire.</p>
+      <!-- Liens : les 2 pages du bas, et "Haut de page" qui remonte au titre grâce à id="haut" (voir le h1) -->
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a> -
+        <a href="accessibilite.html">Accessibilité</a> -
+        <a href="#haut">Haut de page</a>
+      </p>
+    </footer>
+  </body>
+</html>

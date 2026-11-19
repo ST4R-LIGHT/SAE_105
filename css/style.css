@@ -71,6 +71,12 @@ h2 {
   color: #1b5e20;
 }
 
+/* h3 = les sous-titres des parties, en vert foncé comme les h2 */
+/* pas utilisé pour la page formulaire, mais pour les autres pages */
+h3 {
+  color: #1b5e20;
+}
+
 /* strong = les mots importants (en gras), ils sont en vert foncé */
 strong {
   color: #1b5e20;
