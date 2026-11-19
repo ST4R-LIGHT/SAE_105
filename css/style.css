@@ -1,4 +1,4 @@
-/* ------------ Réglages de base ------------ */
+/* ------------- Réglages de base ------------ */
 /* body = toute la page, ce qu'on met ici s'applique partout */
 body {
   /* font-family = la police d'écriture de tout le site */
@@ -38,7 +38,7 @@ a {
   color: #1b5e20;
 }
 
-/* ---------- Partie Entête ----------- */
+/* ------------ Partie Entête ------------ */
 /* header = le bandeau du haut avec le logo et le menu */
 header {
   /* background-color = bandeau vert */
@@ -55,7 +55,7 @@ header {
   flex-wrap: wrap;
 }
 
-/* ---------- Titres et mots importants ---------- */
+/* ----------- Titres et mots importants ---------- */
 /* h1 = le grand titre "Viridis" dans le bandeau */
 h1 {
   /* color = blanc pour qu'on le voie bien sur le vert */
@@ -76,7 +76,7 @@ strong {
   color: #1b5e20;
 }
 
-/* ---------- Menu ---------- */
+/* ----------- Menu ---------- */
 /* nav ul = la liste des liens du menu */
 nav ul {
   /* display: flex = les liens sont côte à côte au lieu d'être les uns sous les autres */
@@ -105,14 +105,14 @@ nav a:hover {
   color: black;
 }
 
-/* ---------- Contenu ---------- */
+/* ------------ Contenu ---------- */
 /* section = chaque partie de la page (présentation, visite, avis) */
 section {
   /* padding = un petit espace à gauche et à droite */
   padding: 0 10px;
 }
 
-/* ---------- Formulaire ---------- */
+/* ------------- Formulaire ----------- */
 /* label = le texte devant chaque champ ("Nom :", "Email :"...), il est en gras */
 label {
   font-weight: bold;
@@ -139,7 +139,7 @@ button {
   border: none;
 }
 
-/* ---------- Partie Pied de page ---------- */
+/* ------------ Partie Pied de page ----------- */
 /* footer = le bandeau du bas avec le texte et les liens */
 footer {
   /* background-color = vert plus foncé que le header */
