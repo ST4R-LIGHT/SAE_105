@@ -1,33 +1,166 @@
-
 /* ------------ Réglages de base ------------ */
+/* body = toute la page, ce qu'on met ici s'applique partout */
 body {
-  font-family: Arial, sans-serif; 
-  font-size: 1rem;      /* rem = taille de base du navigateur */
-  background-color: #f4f9f4; 
-  color: #222222; 
-  margin: 0;    /* enlève la marge par défaut autour de la page */
-  display: flex; /* flexbox : pour afficher les blocs en colonne-- */
+  /* font-family = la police d'écriture de tout le site */
+  font-family: Arial, sans-serif;
+  /* font-size = la taille du texte, rem = root em = taille de base du navigateur */
+  font-size: 1rem;
+  /* background-color = la couleur du fond, ici un vert très clair */
+  background-color: #f4f9f4;
+  /* color = la couleur du texte, ici un gris presque noir */
+  color: #222222;
+  /* margin = l'espace autour, 0 enlève la marge par défaut autour de la page */
+  margin: 0;
+  /* display: flex = flexbox, ça permet de ranger les blocs comme on veut */
+  display: flex;
+  /* flex-direction: column = header, main et footer sont les uns sous les autres */
   flex-direction: column;
-  min-height: 100vh;    /* --et le body fait au moins la hauteur de l'écran */
+  /* min-height = hauteur minimum, 100vh = toute la hauteur de l'écran */
+  min-height: 100vh;
 }
 
-/* Le contenu principal prend toute la place libre : le footer reste en bas */
+/* main = le contenu principal, il prend toute la place libre pour que le footer reste en bas */
 main {
+  /* flex: 1 = main prend toute la place qui reste */
   flex: 1;
+  /* width = la largeur, 90% de l'écran */
   width: 90%;
-  max-width: 900px;   /* largeur pour le texte */
-  margin: 0 auto;      /* centré */
+  /* max-width = largeur maximum, pour que les lignes de texte ne soient pas trop longues */
+  max-width: 900px;
+  /* margin: 0 auto = rien en haut et en bas, auto à gauche et à droite donc c'est centré */
+  margin: 0 auto;
+  /* padding = l'espace à l'intérieur, 20px en haut et en bas */
   padding: 20px 0;
 }
 
-a { color: #1b5e20; }       /* et les liens en vert foncé */
+/* a = les liens, ils sont en vert foncé */
+a {
+  color: #1b5e20;
+}
 
 /* ---------- Partie Entête ----------- */
+/* header = le bandeau du haut avec le logo et le menu */
 header {
-  background-color: #2e7d32;  /* bandeau vert */
+  /* background-color = bandeau vert */
+  background-color: #2e7d32;
+  /* padding = espace à l'intérieur du bandeau, 10px en haut et en bas, 5% sur les côtés */
   padding: 10px 5%;
-  display: flex;     /* logo à gauche, menu à droite */
-  justify-content: space-between; 
-  align-items: center;         /* centre verticalement */
-  flex-wrap: wrap;     /* si l'écran est plus compacte, le menu passera dessous */
+  /* display: flex = le logo et le menu sont sur la même ligne */
+  display: flex;
+  /* justify-content: space-between = logo collé à gauche, menu collé à droite */
+  justify-content: space-between;
+  /* align-items: center = le logo et le menu sont centrés en hauteur */
+  align-items: center;
+  /* flex-wrap: wrap = si l'écran est trop petit, le menu passe en dessous */
+  flex-wrap: wrap;
+}
+
+/* ---------- Titres et mots importants ---------- */
+/* h1 = le grand titre "Viridis" dans le bandeau */
+h1 {
+  /* color = blanc pour qu'on le voie bien sur le vert */
+  color: white;
+  /* font-size = la taille du titre */
+  font-size: 28px;
+}
+
+/* h2 = les sous-titres des sections */
+h2 {
+  font-size: 20px;
+  /* color = vert foncé */
+  color: #1b5e20;
+}
+
+/* strong = les mots importants (en gras), ils sont en vert foncé */
+strong {
+  color: #1b5e20;
+}
+
+/* ---------- Menu ---------- */
+/* nav ul = la liste des liens du menu */
+nav ul {
+  /* display: flex = les liens sont côte à côte au lieu d'être les uns sous les autres */
+  display: flex;
+  /* gap = l'espace entre chaque lien */
+  gap: 8px;
+  /* list-style-type: none = enlève les petits points (puces) devant les liens */
+  list-style-type: none;
+}
+
+/* nav a = chaque lien du menu */
+nav a {
+  /* color = blanc sur le bandeau vert */
+  color: white;
+  /* text-decoration: none = enlève le soulignement des liens */
+  text-decoration: none;
+  /* padding = espace autour du texte, la zone cliquable est plus grande */
+  padding: 14px 16px;
+}
+
+/* nav a:hover = quand la souris passe sur un lien du menu */
+nav a:hover {
+  /* background-color = le fond devient jaune */
+  background-color: #ffeb3b;
+  /* color = le texte devient noir pour qu'on le lise bien sur le jaune */
+  color: black;
+}
+
+/* ---------- Contenu ---------- */
+/* section = chaque partie de la page (présentation, visite, avis) */
+section {
+  /* padding = un petit espace à gauche et à droite */
+  padding: 0 10px;
+}
+
+/* ---------- Formulaire ---------- */
+/* label = le texte devant chaque champ ("Nom :", "Email :"...), il est en gras */
+label {
+  font-weight: bold;
+}
+
+/* input, textarea = les champs à remplir (la virgule = les 2 ont le même style) */
+input,
+textarea {
+  /* border = le contour du champ : 1px d'épaisseur, trait plein, gris clair */
+  border: 1px solid #cccccc;
+  /* padding = espace entre le contour et le texte qu'on tape */
+  padding: 4px;
+}
+
+/* button = le bouton "Envoyer" */
+button {
+  /* background-color = vert comme le bandeau */
+  background-color: #2e7d32;
+  /* color = texte blanc */
+  color: white;
+  /* padding = espace autour du texte, le bouton est plus gros */
+  padding: 8px 16px;
+  /* border: none = enlève le contour gris du bouton */
+  border: none;
+}
+
+/* ---------- Partie Pied de page ---------- */
+/* footer = le bandeau du bas avec le texte et les liens */
+footer {
+  /* background-color = vert plus foncé que le header */
+  background-color: #1b5e20;
+  /* color = texte blanc */
+  color: white;
+  /* padding = espace à l'intérieur du bandeau */
+  padding: 10px;
+  /* display: flex = le texte et les liens sont côte à côte */
+  display: flex;
+  /* justify-content: center = tout est au milieu de la page */
+  justify-content: center;
+  /* align-items: center = centré en hauteur */
+  align-items: center;
+  /* gap = l'espace entre le texte et les liens */
+  gap: 20px;
+  /* flex-wrap: wrap = si l'écran est petit, les liens passent en dessous */
+  flex-wrap: wrap;
+}
+
+/* footer a = les liens du footer, en blanc sinon ils seraient vert foncé sur du vert foncé */
+footer a {
+  color: white;
 }
