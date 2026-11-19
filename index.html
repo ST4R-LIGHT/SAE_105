@@ -1,11 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- permet d'afficher les accents -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Explique au navigateur comment afficher la page sur téléphone -->
+    <title>Accueil - Viridis</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <!-- Partie Body, avec header, main et footer -->
+  <body>
+    <!-- En-tête : le titre du site et le menu -->
+    <header>
+      <!-- Le logo (image) est placé dans le titre -->
+      <h1 id="haut">
+        <img
+          src="images/logo.svg"
+          alt="Logo Viridis : une feuille verte"
+          width="40"
+        />
+        Viridis
+      </h1>
+      <!-- Menu : une liste de liens vers les pages du site -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="ville.html">La cité</a></li>
+          <li><a href="energie.html">Énergie</a></li>
+          <li><a href="transports.html">Transports</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenu principal de la page -->
+    <main>
+      <!-- Présentation du site -->
+      <section id="presentation">
+        <h2>Viridis, la cité verte de 2087</h2>
+        <p>
+          En 2087, une ville a été construite autour d'une seule règle : le
+          <strong>développement durable</strong> passe avant tout. Visitez-la
+          grâce à ce site imaginaire.
+        </p>
+        <!-- Image cliquable : le clic mène à la source de la photo -->
+        <figure>
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Bosco_Verticale_from_UniCredit_Tower,_Milan_(17591709258).jpg"
+          >
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Bosco_Verticale_from_UniCredit_Tower,_Milan_(17591709258).jpg?width=600"
+              alt="Deux tours dont les balcons sont couverts d'arbres"
+              width="400"
+            />
+          </a>
+          <figcaption>
+            Les immeubles de Viridis sont couverts de plantes (source :
+            Wikimedia Commons)
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Liens vers les autres pages -->
+      <section id="visite">
+        <h2>Visiter Viridis</h2>
+        <ul>
+          <li><a href="ville.html">La cité</a></li>
+          <li><a href="energie.html">Énergie</a></li>
+          <li><a href="transports.html">Transports</a></li>
+        </ul>
+      </section>
+
+      <!-- Formulaire : le visiteur donne son avis -->
+      <section id="avis">
+        <h2>Donnez votre avis</h2>
+        <form action="index.html" method="get">
+          <p>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" />
+          </p>
+          <p>
+            <label for="mail">Email :</label>
+            <input type="email" id="mail" name="mail" />
+          </p>
+          <p>
+            <label for="message">Message :</label><br />
+            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+          </p>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

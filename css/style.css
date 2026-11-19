@@ -1,0 +1,33 @@
+
+/* ------------ Réglages de base ------------ */
+body {
+  font-family: Arial, sans-serif; 
+  font-size: 1rem;      /* rem = taille de base du navigateur */
+  background-color: #f4f9f4; 
+  color: #222222; 
+  margin: 0;    /* enlève la marge par défaut autour de la page */
+  display: flex; /* flexbox : pour afficher les blocs en colonne-- */
+  flex-direction: column;
+  min-height: 100vh;    /* --et le body fait au moins la hauteur de l'écran */
+}
+
+/* Le contenu principal prend toute la place libre : le footer reste en bas */
+main {
+  flex: 1;
+  width: 90%;
+  max-width: 900px;   /* largeur pour le texte */
+  margin: 0 auto;      /* centré */
+  padding: 20px 0;
+}
+
+a { color: #1b5e20; }       /* et les liens en vert foncé */
+
+/* ---------- Partie Entête ----------- */
+header {
+  background-color: #2e7d32;  /* bandeau vert */
+  padding: 10px 5%;
+  display: flex;     /* logo à gauche, menu à droite */
+  justify-content: space-between; 
+  align-items: center;         /* centre verticalement */
+  flex-wrap: wrap;     /* si l'écran est plus compacte, le menu passera dessous */
+}
