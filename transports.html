@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- permet d'afficher les accents -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Explique au navigateur comment afficher la page sur téléphone -->
+    <meta name="description"
+        content="Les transports à Viridis : pas de voitures à essence, on se déplace à pied, à vélo ou en tramway électrique." />
+    <!-- description = la phrase qui s'affiche sous le titre dans Google (elle doit être différente sur chaque page) -->
+    <meta name="author" content="Jennifer LAFITTE" />
+    <title>Transports - Viridis</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+</head>
+<!-- Partie Body, avec header, main et footer -->
+
+<body>
+    <!-- En-tête : le même que sur la page d'accueil -->
+    <header>
+        <!-- Le logo (image) est placé dans le titre -->
+        <h1 id="haut">
+            <img src="images/logo.svg" alt="Logo Viridis : une feuille verte" />
+            Viridis
+        </h1>
+        <!-- Menu : une liste de liens vers les pages du site -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="ville.html">La cité</a></li>
+                <li><a href="energie.html">Énergie</a></li>
+                <li><a href="transports.html">Transports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu principal de la page -->
+    <main>
+        <h2>Les transports</h2>
+        <p>
+            Les voitures à essence sont interdites. On se déplace à pied, à vélo
+            ou en tramway.
+        </p>
+
+        <!-- Partie 1 : le tramway (une photo) -->
+        <section id="tramway">
+            <h3>Le tramway</h3>
+            <p>
+                Le tramway électrique passe toutes les trois minutes. Il fonctionne
+                grâce à l'énergie solaire et éolienne de la ville.
+            </p>
+            <!-- Image cliquable : le clic mène à la source de la photo -->
+            <figure>
+                <a href="https://commons.wikimedia.org/wiki/File:Strasbourg_Tram.JPG">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Strasbourg_Tram.JPG?width=600"
+                        alt="Un tramway moderne dans une rue de Strasbourg" />
+                </a>
+                <figcaption>
+                    Un tramway à Strasbourg, comme celui de Viridis (source :
+                    Wikimedia Commons)
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Pied de page : le même que sur la page d'accueil -->
+    <footer>
+        <p>Viridis - projet étudiant (SAE 105). Site imaginaire.</p>
+        <!-- Liens : les 2 pages du bas, et "Haut de page" qui remonte au titre grâce à id="haut" (voir le h1) -->
+        <p>
+            <a href="mentions-legales.html">Mentions légales</a> -
+            <a href="accessibilite.html">Accessibilité</a> -
+            <a href="#haut">Haut de page</a>
+        </p>
+    </footer>
+</body>
+
+</html>
