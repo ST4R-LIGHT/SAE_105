@@ -5,8 +5,8 @@ body {
   font-family: Arial, sans-serif;
   /* font-size = la taille du texte, rem = root em = taille de base du navigateur */
   font-size: 1rem;
-  /* background-color = la couleur du fond, ici un vert très pâle (tiré du vert vif du logo) */
-  background-color: #effaf3;
+  /* background-color = la couleur du fond, ici un vert menthe très léger pour un effet frais, ça va mieux avec la vibe du site */
+  background-color: #c2f2e1;
   /* color = la couleur du texte, ici un gris presque noir */
   color: #222222;
   /* margin = l'espace autour, 0 enlève la marge par défaut autour de la page */
@@ -53,6 +53,16 @@ header {
   align-items: center;
   /* flex-wrap: wrap = si l'écran est trop petit, le menu passe en dessous */
   flex-wrap: wrap;
+}
+
+/* Monsieur Domergue m'a conseillé de mettre la largeur de l'image logo dans la partie css plutot que celle html */
+header img {
+  width: 40px;
+}
+
+/* Donc j'ai changé aussi pour les images */
+figure img {
+  width: 400px;
 }
 
 /* ----------- Titres et mots importants ---------- */
