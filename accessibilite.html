@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- permet d'afficher les accents -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Explique au navigateur comment afficher la page sur téléphone -->
+    <meta
+      name="description"
+      content="Déclaration d'accessibilité du site Viridis : ce qui a été fait pour que le site soit utilisable par tous."
+    />
+    <!-- description = la phrase qui s'affiche sous le titre dans Google (elle doit être différente sur chaque page) -->
+    <meta name="author" content="Jennifer LAFITTE" />
+    <title>Accessibilité - Viridis</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <!-- Partie Body, avec header, main et footer -->
+
+  <body>
+    <!-- En-tête : le même que sur la page d'accueil -->
+    <header>
+      <!-- Le logo (image) est placé dans le titre -->
+      <h1 id="haut">
+        <img src="images/logo.svg" alt="Logo Viridis : une feuille verte" />
+        Viridis
+      </h1>
+      <!-- Menu : une liste de liens vers les pages du site -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="ville.html">La cité</a></li>
+          <li><a href="energie.html">Énergie</a></li>
+          <li><a href="transports.html">Transports</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenu principal de la page : du texte et une liste, pas d'image -->
+    <main>
+      <h2>Déclaration d'accessibilité</h2>
+
+      <!-- Partie 1 : la liste de ce qui a été fait pour l'accessibilité -->
+      <section id="mesures">
+        <p>Voici ce qui a été fait pour rendre le site accessible :</p>
+        <!-- ul = une liste à puces, chaque li = un point de la liste -->
+        <ul>
+          <li>les images ont un texte alternatif ;</li>
+          <li>les champs du formulaire ont un label ;</li>
+          <li>le site utilise les balises HTML5 ;</li>
+          <li>les couleurs sont bien contrastées ;</li>
+          <li>les liens se suivent au clavier.</li>
+        </ul>
+      </section>
+
+      <!-- Partie 2 : qui contacter en cas de problème -->
+      <section id="contact">
+        <p>
+          Un problème ? Vous trouverez qui a créé le site dans les
+          <a href="mentions-legales.html">mentions légales</a>.
+        </p>
+      </section>
+    </main>
+
+    <!-- Pied de page : le même que sur la page d'accueil -->
+    <footer>
+      <p>Viridis - projet étudiant (SAE 105). Site imaginaire.</p>
+      <!-- Liens : les 2 pages du bas, et "Haut de page" qui remonte au titre grâce à id="haut" (voir le h1) -->
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a> -
+        <a href="accessibilite.html">Accessibilité</a> -
+        <a href="#haut">Haut de page</a>
+      </p>
+    </footer>
+  </body>
+</html>
