@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- permet d'afficher les accents -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Explique au navigateur comment afficher la page sur téléphone -->
+    <meta
+      name="description"
+      content="Mentions légales du site Viridis : éditeur, hébergement, images et données personnelles."
+    />
+    <!-- description = la phrase qui s'affiche sous le titre dans Google (elle doit être différente sur chaque page) -->
+    <meta name="author" content="Jennifer LAFITTE" />
+    <title>Mentions légales - Viridis</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <!-- Partie Body, avec header, main et footer -->
+
+  <body>
+    <!-- En-tête : le même que sur la page d'accueil -->
+    <header>
+      <!-- Le logo (image) est placé dans le titre -->
+      <h1 id="haut">
+        <img src="images/logo.svg" alt="Logo Viridis : une feuille verte" />
+        Viridis
+      </h1>
+      <!-- Menu : une liste de liens vers les pages du site -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="ville.html">La cité</a></li>
+          <li><a href="energie.html">Énergie</a></li>
+          <li><a href="transports.html">Transports</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenu principal de la page : seulement du texte, pas d'image -->
+    <main>
+      <h2>Mentions légales</h2>
+
+      <!-- Partie 1 : qui a fait le site -->
+      <section id="editeur">
+        <h3>Éditeur du site</h3>
+        <p>
+          Jennifer LAFITTE, étudiante en BUT MMI. Site imaginaire (projet SAE
+          105).
+        </p>
+      </section>
+
+      <!-- Partie 2 : où le site est rangé sur internet -->
+      <section id="hebergement">
+        <h3>Hébergement</h3>
+        <p>Hébergé sur le serveur de l'IUT.</p>
+      </section>
+
+      <!-- Partie 3 : d'où viennent les images -->
+      <section id="images">
+        <h3>Images</h3>
+        <p>Photos et dessin : Wikimedia Commons. Logo : fait pour ce projet.</p>
+      </section>
+
+      <!-- Partie 4 : ce que le site fait des informations du visiteur -->
+      <section id="donnees">
+        <h3>Données personnelles</h3>
+        <p>Le formulaire n'enregistre rien.</p>
+      </section>
+    </main>
+
+    <!-- Pied de page : le même que sur la page d'accueil -->
+    <footer>
+      <p>Viridis - projet étudiant (SAE 105). Site imaginaire.</p>
+      <!-- Liens : les 2 pages du bas, et "Haut de page" qui remonte au titre grâce à id="haut" (voir le h1) -->
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a> -
+        <a href="accessibilite.html">Accessibilité</a> -
+        <a href="#haut">Haut de page</a>
+      </p>
+    </footer>
+  </body>
+</html>
