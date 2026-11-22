@@ -73,19 +73,28 @@ function choisirAstuce(tableau) {
 
 
 /* ---------- Programme principal ---------- */
-// Ici, on utilise vraiment les 2 fonctions du haut
+// Ici, on utilise vraiment les 2 fonctions du haut.
 
-// 1. On prend l'heure de l'ordi (un nombre de 0 à 23). Vu au TD3, merci aux cours !
-// let = une boîte qui peut changer.
-let heure = new Date().getHours();
+// 1. L'heure (vu au TD3, merci les cours !)
+let heure = new Date().getHours(); // boîte "heure" = l'heure de l'ordi (0 à 23)
 
-// 2. Pour tester : si l'adresse finit par ?heure=22, on fait comme s'il était 22h.
-const parametres = new URLSearchParams(window.location.search);
-if (parametres.get("heure") !== null) {
-  // Number = transforme le texte "22" en nombre 22.
-  heure = Number(parametres.get("heure"));
-}
+// 2. Pour tester avec ?heure=22 à la fin de l'adresse
+const parametres = new URLSearchParams(window.location.search); // lit la fin de l'adresse
 
-// 3. On écrit les messages dans les paragraphes vides de index.html.
-document.getElementById("salutation").textContent = choisirSalutation(heure);
-document.getElementById("astuce").textContent = choisirAstuce(ASTUCES);
+// !== veut dire "est différent de" (le ! = "pas"). null = rien.
+//  Donc : si l'adresse contient bien quelque chose (?heure=...)
+if (parametres.get("heure") !== null) { 
+
+  heure = Number(parametres.get("heure")); 
+} // ^ on prend cette heure
+
+
+// 3. Le code écrit dans la page
+document.getElementById("salutation").textContent = choisirSalutation(heure); // message selon l'heure
+
+document.getElementById("astuce").textContent = choisirAstuce(ASTUCES); // astuce au hasard
+// toujours lire de droite à gauche :
+// choisirAstuce(ASTUCES) → je tire une astuce au hasard ;
+// = → je la mets…
+// .textContent → …comme texte…
+// getElementById("astuce") → …dans le paragraphe astuce
