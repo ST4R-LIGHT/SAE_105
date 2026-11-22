@@ -1,107 +1,112 @@
 <!doctype html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <!-- permet d'afficher les accents -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Explique au navigateur comment afficher la page sur téléphone -->
-    <meta name="description"
-        content="La cité de Viridis : des immeubles couverts de plantes et des arbres qui récoltent le soleil." />
+    <meta
+      name="description"
+      content="La cité de Viridis : des immeubles couverts de plantes et des arbres qui récoltent le soleil."
+    />
     <!-- description = la phrase qui s'affiche sous le titre dans Google (elle doit être différente sur chaque page) -->
     <meta name="author" content="Jennifer LAFITTE" />
     <title>La cité - Viridis</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="images/favicon.ico" />
-</head>
-<!-- Partie Body, avec header, main et footer -->
+  </head>
+  <!-- Partie Body, avec header, main et footer -->
 
-<body>
+  <body>
     <!-- En-tête : le même que sur la page d'accueil -->
     <header>
-        <!-- Le logo (image) est placé dans le titre -->
-        <h1 id="haut">
-            <img src="images/logo.svg" alt="Logo Viridis : une feuille verte" />
-            Viridis
-        </h1>
-        <!-- Menu : une liste de liens vers les pages du site -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="ville.html">La cité</a></li>
-                <li><a href="energie.html">Énergie</a></li>
-                <li><a href="transports.html">Transports</a></li>
-            </ul>
-        </nav>
+      <!-- Le logo (image) est placé dans le titre -->
+      <h1 id="haut">
+        <img src="images/logo.svg" alt="Logo Viridis : une feuille verte" />
+        Viridis
+      </h1>
+      <!-- Menu : une liste de liens vers les pages du site -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="ville.html">La cité</a></li>
+          <li><a href="energie.html">Énergie</a></li>
+          <li><a href="transports.html">Transports</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Contenu principal de la page -->
     <main>
-        <h2>La cité</h2>
-        <!-- Sommaire : des liens qui descendent directement au bon titre de la page.
+      <h2>La cité</h2>
+      <!-- Sommaire : des liens qui descendent directement au bon titre de la page.
          href="#tours-forets" = va à l'élément qui a id="tours-forets" (même système que "Haut de page") -->
+      <p>
+        <a href="#tours-forets">Les Tours-Forêts</a> -
+        <a href="#arbres-soleil">Les Arbres-Soleil</a>
+      </p>
+
+      <!-- Partie 1 : les Tours-Forêts -->
+      <section id="tours-forets">
+        <h3>Les Tours-Forêts</h3>
+        <!-- h3 = un titre plus petit que h2, c'est un sous-titre de "La cité" -->
         <p>
-            <a href="#tours-forets">Les Tours-Forêts</a> -
-            <a href="#arbres-soleil">Les Arbres-Soleil</a>
+          Chaque immeuble est couvert de plantes. Elles nettoient l'air, gardent
+          les logements frais l'été et accueillent les oiseaux.
         </p>
+        <!-- Image cliquable : le clic mène à la source de la photo -->
+        <figure>
+          <a
+            href="https://commons.wikimedia.org/wiki/File:One_Central_Park_Sydney.jpg"
+          >
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/One_Central_Park_Sydney.jpg?width=600"
+              alt="Un immeuble dont les façades sont couvertes de plantes"
+            />
+          </a>
+          <figcaption>
+            One Central Park à Sydney, qui a inspiré les Tours-Forêts (source :
+            Wikimedia Commons)
+          </figcaption>
+        </figure>
+        <!-- Lien qui remonte en haut de la page (vers le titre qui a id="haut") -->
+        <p><a href="#haut">Retour en haut</a></p>
+      </section>
 
-        <!-- Partie 1 : les Tours-Forêts -->
-        <section id="tours-forets">
-            <h3>Les Tours-Forêts</h3>
-            <!-- h3 = un titre plus petit que h2, c'est un sous-titre de "La cité" -->
-            <p>
-                Chaque immeuble est couvert de plantes. Elles nettoient l'air, gardent
-                les logements frais l'été et accueillent les oiseaux.
-            </p>
-            <!-- Image cliquable : le clic mène à la source de la photo -->
-            <figure>
-                <a
-                    href="https://commons.wikimedia.org/wiki/File:Bosco_Verticale_from_UniCredit_Tower,_Milan_(17591709258).jpg">
-                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bosco_Verticale_from_UniCredit_Tower,_Milan_(17591709258).jpg?width=600"
-                        alt="Deux tours dont les balcons sont couverts d'arbres" />
-                </a>
-                <figcaption>
-                    Le Bosco Verticale à Milan, qui a inspiré les Tours-Forêts (source :
-                    Wikimedia Commons)
-                </figcaption>
-            </figure>
-            <!-- Lien qui remonte en haut de la page (vers le titre qui a id="haut") -->
-            <p><a href="#haut">Retour en haut</a></p>
-        </section>
-
-        <!-- Partie 2 : les Arbres-Soleil -->
-        <section id="arbres-soleil">
-            <h3>Les Arbres-Soleil</h3>
-            <p>
-                Au centre de la ville, de grands arbres en métal récoltent la lumière
-                du soleil et l'eau de pluie. Le soir, les habitants s'y retrouvent.
-            </p>
-            <figure>
-                <a
-                    href="https://commons.wikimedia.org/wiki/File:Supertree_Grove,_Gardens_by_the_Bay,_Singapore_-_20120712-02.jpg">
-                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Supertree_Grove,_Gardens_by_the_Bay,_Singapore_-_20120712-02.jpg?width=600"
-                        alt="De grands arbres en métal couverts de plantes dans un jardin" />
-                </a>
-                <figcaption>
-                    Les Supertrees de Singapour, qui ont inspiré les Arbres-Soleil
-                    (source : Wikimedia Commons)
-                </figcaption>
-            </figure>
-            <p><a href="#haut">Retour en haut</a></p>
-        </section>
+      <!-- Partie 2 : les Arbres-Soleil -->
+      <section id="arbres-soleil">
+        <h3>Les Arbres-Soleil</h3>
+        <p>
+          Au centre de la ville, de grands arbres en métal récoltent la lumière
+          du soleil et l'eau de pluie. Le soir, les habitants s'y retrouvent.
+        </p>
+        <figure>
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Supertree_Grove,_Gardens_by_the_Bay,_Singapore_-_20120712-02.jpg"
+          >
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Supertree_Grove,_Gardens_by_the_Bay,_Singapore_-_20120712-02.jpg?width=600"
+              alt="De grands arbres en métal couverts de plantes dans un jardin"
+            />
+          </a>
+          <figcaption>
+            Les Supertrees de Singapour, qui ont inspiré les Arbres-Soleil
+            (source : Wikimedia Commons)
+          </figcaption>
+        </figure>
+        <p><a href="#haut">Retour en haut</a></p>
+      </section>
     </main>
 
     <!-- Pied de page : le même que sur la page d'accueil -->
     <footer>
-        <p>Viridis - projet étudiant (SAE 105). Site imaginaire.</p>
-        <!-- Liens : les 2 pages du bas, et "Haut de page" qui remonte au titre grâce à id="haut" (voir le h1) -->
-        <p>
-            <a href="mentions-legales.html">Mentions légales</a> -
-            <a href="accessibilite.html">Accessibilité</a> -
-            <a href="#haut">Haut de page</a>
-        </p>
+      <p>Viridis - projet étudiant (SAE 105). Site imaginaire.</p>
+      <!-- Liens : les 2 pages du bas, et "Haut de page" qui remonte au titre grâce à id="haut" (voir le h1) -->
+      <p>
+        <a href="mentions-legales.html">Mentions légales</a> -
+        <a href="accessibilite.html">Accessibilité</a> -
+        <a href="#haut">Haut de page</a>
+      </p>
     </footer>
-</body>
-
-
+  </body>
 </html>

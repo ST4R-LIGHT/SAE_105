@@ -60,9 +60,27 @@ header img {
   width: 40px;
 }
 
+/* ------------ Images ------------ */
 /* Donc j'ai changé aussi pour les images */
 figure img {
   width: 400px;
+  /* border-radius = coins arrondis pour les photos */
+  border-radius: 10px;
+}
+
+/* figure = la boîte photo + légende */
+figure {
+  /* display: flex + column = la photo et sa légende l'une sous l'autre */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center = tout est centré au milieu */
+  align-items: center;
+}
+
+/* figcaption = la légende de la photo, en petit et en italique */
+figcaption {
+  font-size: 14px;
+  font-style: italic;
 }
 
 /* ----------- Titres et mots importants ---------- */
@@ -122,10 +140,49 @@ nav a:hover {
 }
 
 /* ------------ Contenu ---------- */
-/* section = chaque partie de la page (présentation, visite, avis) */
+/* section = chaque partie de la page, posée dans un bloc blanc arrondi */
 section {
-  /* padding = un petit espace à gauche et à droite */
-  padding: 0 10px;
+  /* fond blanc pour que le bloc ressorte sur le fond menthe */
+  background-color: white;
+  /* padding = espace à l'intérieur du bloc */
+  padding: 10px 20px;
+  /* margin-bottom = espace sous chaque bloc pour qu'ils ne se collent pas */
+  margin-bottom: 20px;
+  /* border-radius = coins arrondis */
+  border-radius: 10px;
+}
+
+/* ------------ Liens "Visiter Viridis" ------------ */
+/* .liens-visite = la liste des liens "Visiter Viridis" (le point = une classe, voir mémo CSS3) */
+.liens-visite {
+  /* display: flex = les liens se rangent côte à côte, comme sur une étagère */
+  display: flex;
+  /* flex-wrap: wrap = si l'écran est trop petit, ils passent à la ligne */
+  flex-wrap: wrap;
+  /* gap = l'espace entre chaque lien */
+  gap: 15px;
+  /* list-style-type: none = enlève les puces */
+  list-style-type: none;
+  /* padding: 0 = enlève le décalage à gauche de la liste */
+  padding: 0;
+}
+
+/* .liens-visite a = chaque lien devient un petit bouton vert */
+.liens-visite a {
+  /* fond vert vif comme le rond du logo, texte vert forêt */
+  background-color: #2fbf71;
+  color: #12372a;
+  /* padding = le bouton est plus gros */
+  padding: 10px 20px;
+  /* text-decoration: none = enlève le soulignement */
+  text-decoration: none;
+  /* border-radius = coins arrondis (mémo CSS3, nouveautés) */
+  border-radius: 20px;
+}
+
+/* .liens-visite a:hover = quand la souris passe dessus, il devient jaune doré comme le menu */
+.liens-visite a:hover {
+  background-color: #ffc857;
 }
 
 /* ------------- Formulaire ----------- */
@@ -141,18 +198,6 @@ textarea {
   border: 1px solid #2fbf71;
   /* padding = espace entre le contour et le texte qu'on tape */
   padding: 4px;
-}
-
-/* button = le bouton "Envoyer" */
-button {
-  /* background-color = vert vif, comme le rond du logo */
-  background-color: #2fbf71;
-  /* color = texte vert forêt (le blanc serait trop peu lisible sur le vert vif) */
-  color: #12372a;
-  /* padding = espace autour du texte, le bouton est plus gros */
-  padding: 8px 16px;
-  /* border: none = enlève le contour gris du bouton */
-  border: none;
 }
 
 /* ------------ Partie Pied de page ----------- */
