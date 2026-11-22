@@ -84,6 +84,9 @@ header {
 /* Monsieur Domergue m'a conseillé de mettre la largeur de l'image logo dans la partie css plutot que celle html */
 header img {
   width: 40px;
+
+  /* height: auto = la hauteur suit la largeur, le logo n'est pas déformé */
+  height: auto;
 }
 
 /* ------------ Images ------------ */
@@ -93,6 +96,9 @@ header img {
 /* Donc j'ai changé aussi pour les images */
 figure img {
   width: 400px;
+
+  /* height: auto = la hauteur suit la largeur, les photos ne sont pas déformées (width et height du HTML servent seulement à réserver la place) */
+  height: auto;
 
   /* border-radius = coins arrondis pour les photos */
   border-radius: 10px;
