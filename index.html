@@ -27,6 +27,10 @@
         <img src="images/logo.svg" alt="Logo Viridis : une feuille verte" />
         Viridis
       </h1>
+
+      <!-- Clavier : ce sont de vrais liens <a href>, donc le navigateur permet tout seul
+           d'aller de l'un à l'autre avec Tab (et Maj + Tab pour revenir), puis Entrée pour ouvrir -->
+
       <!-- Menu : une liste de liens vers les pages du site -->
       <nav>
         <ul>
@@ -85,9 +89,18 @@
       <!-- Formulaire : le visiteur donne son avis -->
       <section id="avis">
         <h2>Donnez votre avis</h2>
+                <!-- Clavier : les <input> et <textarea> sont aussi atteignables avec Tab.
+             Grâce au label (for = id), on sait toujours à quoi sert le champ où l'on se trouve -->
         <form action="index.html" method="get">
           <!-- form = formulaire, la boîte qui contient tous les champs qui doivent être remplit (email, nom prénom, ...). -->
           <p>
+
+                    <!-- Phrase pour expliquer la navigation au clavier (accessibilité) -->
+        <p>
+          Astuce : vous pouvez naviguer sur le site sans souris, avec la touche
+          <strong>Tab</strong> pour avancer et <strong>Maj + Tab</strong> pour revenir en arrière.
+        </p>
+            
             <label for="nom">Nom :</label>
             <!-- rappel de label vu que j'oublie tout le temps; 
      label : c’est le texte devant un champ  "Nom" avec for="nom", 

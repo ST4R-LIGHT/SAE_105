@@ -34,6 +34,8 @@ main {
 }
 
 /* a = les liens, ils sont en vert forêt (comme la feuille du logo) */
+/* Clavier : je n'enlève jamais le cadre qui apparaît autour d'un lien quand on appuie sur Tab,
+   sinon on ne saurait plus où on est sur la page sans souris */
 a {
   color: #12372a;
 }
@@ -61,6 +63,7 @@ header img {
 }
 
 /* ------------ Images ------------ */
+/* ✨ Embellissement : les photos sont centrées, avec des coins arrondis et une légende plus discrète */
 /* Donc j'ai changé aussi pour les images */
 figure img {
   width: 400px;
@@ -69,6 +72,7 @@ figure img {
 }
 
 /* figure = la boîte photo + légende */
+/* ✨ Embellissement (flexbox) : comme une pile, la photo en haut et la légende en dessous, le tout au milieu */
 figure {
   /* display: flex + column = la photo et sa légende l'une sous l'autre */
   display: flex;
@@ -78,6 +82,7 @@ figure {
 }
 
 /* figcaption = la légende de la photo, en petit et en italique */
+/* ✨ Embellissement : plus petite et penchée, on comprend tout de suite que c'est une légende */
 figcaption {
   font-size: 14px;
   font-style: italic;
@@ -141,6 +146,8 @@ nav a:hover {
 
 /* ------------ Contenu ---------- */
 /* section = chaque partie de la page, posée dans un bloc blanc arrondi */
+/* ✨ Embellissement : chaque partie devient une "carte" blanche sur le fond menthe,
+   ça sépare bien les contenus et la page paraît plus rangée */
 section {
   /* fond blanc pour que le bloc ressorte sur le fond menthe */
   background-color: white;
@@ -153,6 +160,8 @@ section {
 }
 
 /* ------------ Liens "Visiter Viridis" ------------ */
+/* ✨ Embellissement (flexbox) : la liste de liens devient une rangée de boutons arrondis.
+   Il a fallu ajouter class="liens-visite" sur le <ul> dans index.html pour viser seulement cette liste */
 /* .liens-visite = la liste des liens "Visiter Viridis" (le point = une classe, voir mémo CSS3) */
 .liens-visite {
   /* display: flex = les liens se rangent côte à côte, comme sur une étagère */
@@ -181,6 +190,7 @@ section {
 }
 
 /* .liens-visite a:hover = quand la souris passe dessus, il devient jaune doré comme le menu */
+/* ✨ Embellissement : même jaune que le menu, pour que tout le site réagisse pareil */
 .liens-visite a:hover {
   background-color: #ffc857;
 }
