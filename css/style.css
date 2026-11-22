@@ -1,20 +1,28 @@
 /* ------------- Réglages de base ------------ */
+
 /* body = toute la page, ce qu'on met ici s'applique partout */
 body {
   /* font-family = la police d'écriture de tout le site */
   font-family: Arial, sans-serif;
+
   /* font-size = la taille du texte, rem = root em = taille de base du navigateur */
   font-size: 1rem;
+
   /* background-color = la couleur du fond, ici un vert menthe très léger pour un effet frais, ça va mieux avec la vibe du site */
   background-color: #c2f2e1;
+
   /* color = la couleur du texte, ici un gris presque noir */
-  color: #222222;
+  color: #222;
+
   /* margin = l'espace autour, 0 enlève la marge par défaut autour de la page */
   margin: 0;
+
   /* display: flex = flexbox, ça permet de ranger les blocs comme on veut */
   display: flex;
+
   /* flex-direction: column = header, main et footer sont les uns sous les autres */
   flex-direction: column;
+
   /* min-height = hauteur minimum, 100vh = toute la hauteur de l'écran */
   min-height: 100vh;
 }
@@ -23,36 +31,52 @@ body {
 main {
   /* flex: 1 = main prend toute la place qui reste */
   flex: 1;
+
   /* width = la largeur, 90% de l'écran */
   width: 90%;
+
   /* max-width = largeur maximum, pour que les lignes de texte ne soient pas trop longues */
   max-width: 900px;
+
   /* margin: 0 auto = rien en haut et en bas, auto à gauche et à droite donc c'est centré */
   margin: 0 auto;
+
   /* padding = l'espace à l'intérieur, 20px en haut et en bas */
   padding: 20px 0;
 }
 
 /* a = les liens, ils sont en vert forêt (comme la feuille du logo) */
+
 /* Clavier : je n'enlève jamais le cadre qui apparaît autour d'un lien quand on appuie sur Tab,
    sinon on ne saurait plus où on est sur la page sans souris */
 a {
   color: #12372a;
 }
 
+/* footer a = les liens du footer, en blanc sinon ils seraient vert forêt sur du vert forêt */
+footer a {
+  color: white;
+}
+
 /* ------------ Partie Entête ------------ */
+
 /* header = le bandeau du haut avec le logo et le menu */
 header {
   /* background-color = bandeau vert forêt, comme la feuille du logo */
   background-color: #12372a;
+
   /* padding = espace à l'intérieur du bandeau, 10px en haut et en bas, 5% sur les côtés */
   padding: 10px 5%;
+
   /* display: flex = le logo et le menu sont sur la même ligne */
   display: flex;
+
   /* justify-content: space-between = logo collé à gauche, menu collé à droite */
   justify-content: space-between;
+
   /* align-items: center = le logo et le menu sont centrés en hauteur */
   align-items: center;
+
   /* flex-wrap: wrap = si l'écran est trop petit, le menu passe en dessous */
   flex-wrap: wrap;
 }
@@ -63,25 +87,31 @@ header img {
 }
 
 /* ------------ Images ------------ */
+
 /* ✨ Embellissement : les photos sont centrées, avec des coins arrondis et une légende plus discrète */
+
 /* Donc j'ai changé aussi pour les images */
 figure img {
   width: 400px;
+
   /* border-radius = coins arrondis pour les photos */
   border-radius: 10px;
 }
 
 /* figure = la boîte photo + légende */
+
 /* ✨ Embellissement (flexbox) : comme une pile, la photo en haut et la légende en dessous, le tout au milieu */
 figure {
   /* display: flex + column = la photo et sa légende l'une sous l'autre */
   display: flex;
   flex-direction: column;
+
   /* align-items: center = tout est centré au milieu */
   align-items: center;
 }
 
 /* figcaption = la légende de la photo, en petit et en italique */
+
 /* ✨ Embellissement : plus petite et penchée, on comprend tout de suite que c'est une légende */
 figcaption {
   font-size: 14px;
@@ -89,10 +119,12 @@ figcaption {
 }
 
 /* ----------- Titres et mots importants ---------- */
+
 /* h1 = le grand titre "Viridis" dans le bandeau */
 h1 {
   /* color = blanc pour qu'on le voie bien sur le vert forêt */
   color: white;
+
   /* font-size = la taille du titre */
   font-size: 28px;
 }
@@ -100,11 +132,13 @@ h1 {
 /* h2 = les sous-titres des sections */
 h2 {
   font-size: 20px;
+
   /* color = vert forêt */
   color: #12372a;
 }
 
 /* h3 = les sous-titres des parties, en vert forêt comme les h2 */
+
 /* pas utilisé pour la page formulaire, mais pour les autres pages */
 h3 {
   color: #12372a;
@@ -116,12 +150,15 @@ strong {
 }
 
 /* ----------- Menu ---------- */
+
 /* nav ul = la liste des liens du menu */
 nav ul {
   /* display: flex = les liens sont côte à côte au lieu d'être les uns sous les autres */
   display: flex;
+
   /* gap = l'espace entre chaque lien */
   gap: 8px;
+
   /* list-style-type: none = enlève les petits points (puces) devant les liens */
   list-style-type: none;
 }
@@ -130,48 +167,53 @@ nav ul {
 nav a {
   /* color = blanc sur le bandeau vert forêt */
   color: white;
+
   /* text-decoration: none = enlève le soulignement des liens */
   text-decoration: none;
+
   /* padding = espace autour du texte, la zone cliquable est plus grande */
   padding: 14px 16px;
 }
 
-/* nav a:hover = quand la souris passe sur un lien du menu */
-nav a:hover {
-  /* background-color = le fond devient jaune doré, comme le contour du logo */
-  background-color: #ffc857;
-  /* color = le texte devient vert forêt pour qu'on le lise bien sur le jaune */
-  color: #12372a;
-}
-
 /* ------------ Contenu ---------- */
+
 /* section = chaque partie de la page, posée dans un bloc blanc arrondi */
+
 /* ✨ Embellissement : chaque partie devient une "carte" blanche sur le fond menthe,
    ça sépare bien les contenus et la page paraît plus rangée */
 section {
   /* fond blanc pour que le bloc ressorte sur le fond menthe */
   background-color: white;
+
   /* padding = espace à l'intérieur du bloc */
   padding: 10px 20px;
+
   /* margin-bottom = espace sous chaque bloc pour qu'ils ne se collent pas */
   margin-bottom: 20px;
+
   /* border-radius = coins arrondis */
   border-radius: 10px;
 }
 
 /* ------------ Liens "Visiter Viridis" ------------ */
+
 /* ✨ Embellissement (flexbox) : la liste de liens devient une rangée de boutons arrondis.
    Il a fallu ajouter class="liens-visite" sur le <ul> dans index.html pour viser seulement cette liste */
+
 /* .liens-visite = la liste des liens "Visiter Viridis" (le point = une classe, voir mémo CSS3) */
 .liens-visite {
   /* display: flex = les liens se rangent côte à côte, comme sur une étagère */
   display: flex;
+
   /* flex-wrap: wrap = si l'écran est trop petit, ils passent à la ligne */
   flex-wrap: wrap;
+
   /* gap = l'espace entre chaque lien */
   gap: 15px;
+
   /* list-style-type: none = enlève les puces */
   list-style-type: none;
+
   /* padding: 0 = enlève le décalage à gauche de la liste */
   padding: 0;
 }
@@ -181,21 +223,38 @@ section {
   /* fond vert vif comme le rond du logo, texte vert forêt */
   background-color: #2fbf71;
   color: #12372a;
+
   /* padding = le bouton est plus gros */
   padding: 10px 20px;
+
   /* text-decoration: none = enlève le soulignement */
   text-decoration: none;
+
   /* border-radius = coins arrondis (mémo CSS3, nouveautés) */
   border-radius: 20px;
 }
 
+/* Stylelint (no-descending-specificity) : les règles des liens sont rangées
+   du moins précis au plus précis, donc nav a:hover est ici et non dans la partie Menu */
+
+/* nav a:hover = quand la souris passe sur un lien du menu */
+nav a:hover {
+  /* background-color = le fond devient jaune doré, comme le contour du logo */
+  background-color: #ffc857;
+
+  /* color = le texte devient vert forêt pour qu'on le lise bien sur le jaune */
+  color: #12372a;
+}
+
 /* .liens-visite a:hover = quand la souris passe dessus, il devient jaune doré comme le menu */
+
 /* ✨ Embellissement : même jaune que le menu, pour que tout le site réagisse pareil */
 .liens-visite a:hover {
   background-color: #ffc857;
 }
 
 /* ------------- Formulaire ----------- */
+
 /* label = le texte devant chaque champ ("Nom :", "Email :"...), il est en gras */
 label {
   font-weight: bold;
@@ -206,32 +265,36 @@ input,
 textarea {
   /* border = le contour du champ : 1px d'épaisseur, trait plein, vert vif comme le rond du logo */
   border: 1px solid #2fbf71;
+
   /* padding = espace entre le contour et le texte qu'on tape */
   padding: 4px;
 }
 
 /* ------------ Partie Pied de page ----------- */
+
 /* footer = le bandeau du bas avec le texte et les liens */
 footer {
   /* background-color = vert forêt, comme le header */
   background-color: #12372a;
+
   /* color = texte blanc */
   color: white;
+
   /* padding = espace à l'intérieur du bandeau */
   padding: 10px;
+
   /* display: flex = le texte et les liens sont côte à côte */
   display: flex;
+
   /* justify-content: center = tout est au milieu de la page */
   justify-content: center;
+
   /* align-items: center = centré en hauteur */
   align-items: center;
+
   /* gap = l'espace entre le texte et les liens */
   gap: 20px;
+
   /* flex-wrap: wrap = si l'écran est petit, les liens passent en dessous */
   flex-wrap: wrap;
-}
-
-/* footer a = les liens du footer, en blanc sinon ils seraient vert forêt sur du vert forêt */
-footer a {
-  color: white;
 }
